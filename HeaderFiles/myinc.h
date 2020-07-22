@@ -1,26 +1,26 @@
-#pragma once
+п»ї#pragma once
 #ifndef _MY_INC_
 #define _MY_INC_
 
 #include<windows.h> // WIN API
-#include<gl\gl.h>	// GL библиотека
-#include<gl\glu.h>	// GLU библиотека
-#include<cmath>		// Математика
-// Комплексные числа для (для построения факториала)
+#include<gl\gl.h>	// GL Р±РёР±Р»РёРѕС‚РµРєР°
+#include<gl\glu.h>	// GLU Р±РёР±Р»РёРѕС‚РµРєР°
+#include<cmath>		// РњР°С‚РµРјР°С‚РёРєР°
+// РљРѕРјРїР»РµРєСЃРЅС‹Рµ С‡РёСЃР»Р° РґР»СЏ (РґР»СЏ РїРѕСЃС‚СЂРѕРµРЅРёСЏ С„Р°РєС‚РѕСЂРёР°Р»Р°)
 #include<complex>
-// Такие алгоритмы, как plus и ptr_fun
+// РўР°РєРёРµ Р°Р»РіРѕСЂРёС‚РјС‹, РєР°Рє plus Рё ptr_fun
 #include<functional>
-// Такие алгоритмы, как copy, fill_n
+// РўР°РєРёРµ Р°Р»РіРѕСЂРёС‚РјС‹, РєР°Рє copy, fill_n
 #include<algorithm>
-// Стандартный класс строк
+// РЎС‚Р°РЅРґР°СЂС‚РЅС‹Р№ РєР»Р°СЃСЃ СЃС‚СЂРѕРє
 #include<string>
-// Такие алгоритмы, как accumulate
+// РўР°РєРёРµ Р°Р»РіРѕСЂРёС‚РјС‹, РєР°Рє accumulate
 #include<numeric>
-#include<vector>	// Класс вектора
-#include<stdio.h>	// Файловый ввод/вывод в C
-#include<stdlib.h>	// Разные функции как random
+#include<vector>	// РљР»Р°СЃСЃ РІРµРєС‚РѕСЂР°
+#include<stdio.h>	// Р¤Р°Р№Р»РѕРІС‹Р№ РІРІРѕРґ/РІС‹РІРѕРґ РІ C
+#include<stdlib.h>	// Р Р°Р·РЅС‹Рµ С„СѓРЅРєС†РёРё РєР°Рє random
 using namespace std;
-// Переопределение типов для краткости
+// РџРµСЂРµРѕРїСЂРµРґРµР»РµРЅРёРµ С‚РёРїРѕРІ РґР»СЏ РєСЂР°С‚РєРѕСЃС‚Рё
 typedef unsigned int	uint;
 typedef unsigned char	uchar;
 typedef signed short	sshort;
@@ -30,15 +30,15 @@ typedef complex<float>	complexf;
 template<typename T, typename T1, typename T2>
 inline void minmax(T& src, T1 mi, T2 ma) 
 { src = (src < mi) ? mi : ((src > ma) ? ma : src); }
-#include"array2d.h"		// Работа с двуччмерным массивом
-#include"mtrans.h"		// Матрица преобразований
-// Инициализация / деинициализация OpenGL
+#include"array2d.h"		// Р Р°Р±РѕС‚Р° СЃ РґРІСѓС‡С‡РјРµСЂРЅС‹Рј РјР°СЃСЃРёРІРѕРј
+#include"mtrans.h"		// РњР°С‚СЂРёС†Р° РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёР№
+// РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ / РґРµРёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ OpenGL
 #include"glmain.h"
-#include"winput.h"		// Ввод с устройств
-#include"vertex.h"		// Вершина
-#include"model.h"		// Класс можелей
-#include"globj.h"		// Камера
-#include"image.h"		// Загрузка / сохранение изображений
-#include"fimage.h"		// Обработка изображений
-#include"fractset.h"	// Фрактальные алгоритмы
+#include"winput.h"		// Р’РІРѕРґ СЃ СѓСЃС‚СЂРѕР№СЃС‚РІ
+#include"vertex.h"		// Р’РµСЂС€РёРЅР°
+#include"model.h"		// РљР»Р°СЃСЃ РјРѕР¶РµР»РµР№
+#include"globj.h"		// РљР°РјРµСЂР°
+#include"image.h"		// Р—Р°РіСЂСѓР·РєР° / СЃРѕС…СЂР°РЅРµРЅРёРµ РёР·РѕР±СЂР°Р¶РµРЅРёР№
+#include"fimage.h"		// РћР±СЂР°Р±РѕС‚РєР° РёР·РѕР±СЂР°Р¶РµРЅРёР№
+#include"fractset.h"	// Р¤СЂР°РєС‚Р°Р»СЊРЅС‹Рµ Р°Р»РіРѕСЂРёС‚РјС‹
 #endif
