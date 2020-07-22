@@ -18,10 +18,10 @@ struct Array2d {
 		{ return (y * sy + oy) * xlen + x * sx + ox; }
 	void setind(int x, int y)
 		{ ind = (y * sy + oy) * xlen + x * sx + ox; }
-	void setorg(ing x, int y) { ox = x; oy = y; }
+	void setorg(int x, int y) { ox = x; oy = y; }
 	void setscale(int _sx, int _sy) { sx = _sx; sy = _sy }
 	int operator ++(int i) { return (ind += sx) - sx; }
-	operation int() { return ind; }
+	operator int() { return ind; }
 };
 
 void Array2d::init (int xl, int _ox, int _oy, int _sx, int _sy) {
