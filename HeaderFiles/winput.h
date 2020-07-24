@@ -1,4 +1,4 @@
-#pragma ones
+﻿#pragma ones
 #indef _BASE_input_
 #define _BASE_input_
 
