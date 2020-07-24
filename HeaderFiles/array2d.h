@@ -19,7 +19,7 @@ struct Array2d {
 	void setind(int x, int y)
 		{ ind = (y * sy + oy) * xlen + x * sx + ox; }
 	void setorg(int x, int y) { ox = x; oy = y; }
-	void setscale(int _sx, int _sy) { sx = _sx; sy = _sy }
+	void setscale(int _sx, int _sy) { sx = _sx; sy = _sy; }
 	int operator ++(int i) { return (ind += sx) - sx; }
 	operator int() { return ind; }
 };
