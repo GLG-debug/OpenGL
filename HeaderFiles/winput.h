@@ -1,5 +1,5 @@
-﻿#pragma ones
-#indef _BASE_input_
+﻿#pragma once
+#ifndef _BASE_input_
 #define _BASE_input_
 
 // Класс? сохранющий ввод виртуальных клавиш
